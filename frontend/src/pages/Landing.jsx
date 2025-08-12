@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Landing() {
   return (
     <div className="bg-gradient-to-br from-purple-50 to-white min-h-screen flex flex-col">
@@ -6,18 +8,18 @@ export default function Landing() {
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <h1 className="text-2xl font-bold text-purple-600">LinkNest</h1>
           <div className="flex gap-4">
-            <a
-              href="/login"
+            <Link
+              to="/login"
               className="px-4 py-2 rounded-md text-gray-700 hover:text-purple-600 transition font-medium"
             >
               Login
-            </a>
-            <a
-              href="/register"
+            </Link>
+            <Link
+              to="/register"
               className="px-4 py-2 rounded-md bg-purple-600 text-white hover:bg-purple-700 transition font-medium shadow-md"
             >
               Get Started
-            </a>
+            </Link>
           </div>
         </div>
       </header>
@@ -30,12 +32,12 @@ export default function Landing() {
         <p className="mt-6 text-lg text-gray-600 max-w-2xl">
           Build a stunning, shareable profile to showcase all your links — fast, modern, and beautiful.
         </p>
-        <a
-          href="/register"
+        <Link
+          to="/register"
           className="mt-8 px-8 py-3 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl"
         >
           Create Your LinkNest
-        </a>
+        </Link>
       </section>
 
       {/* Features */}
@@ -73,12 +75,12 @@ export default function Landing() {
       <section className="bg-purple-600 py-16 text-center text-white">
         <h2 className="text-3xl font-bold">Ready to Build Your LinkNest?</h2>
         <p className="mt-4">Start today — it’s free and takes less than a minute!</p>
-        <a
-          href="/register"
+        <Link
+          to="/register"
           className="mt-6 inline-block px-8 py-3 bg-white text-purple-600 rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl"
         >
           Get Started
-        </a>
+        </Link>
       </section>
 
       {/* Footer */}
